@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AutoQuoteCompare</string>
+    <string name="car_year_prompt">Choose a Car year</string>
+    <string name="car_make_prompt">Choose a Car year</string>
+    <string name="radio_own">Own</string>
+    <string name="radio_lease">Lease</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="marital_status">Your Marital Status</string>
+</resources>

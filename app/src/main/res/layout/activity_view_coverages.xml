@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/layout_display_companies_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_selected_image"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:id="@+id/view_your_coverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Review your coverages."
+        android:textColor="@color/black_color"
+        android:textFontWeight="1200"
+        android:textSize="35sp" />
+    <View
+        android:id="@+id/View01"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        android:layout_marginTop="14dp"
+        />
+    <TextView
+        android:id="@+id/make_update_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="You can make updates to your coverages here."
+        android:textFontWeight="400"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/deductibles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Deductibles"
+        android:textColor="@color/black_color"
+        android:textFontWeight="1000"
+        android:textSize="25sp" />
+    <View
+        android:id="@+id/View02"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        android:layout_marginTop="14dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+    <TextView
+        android:id="@+id/vehicles_included"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Vehicles included in collision and comprehensive coverage"
+        android:textColor="@color/black_color"
+        android:textFontWeight="800"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/number_of_vehicles_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text=""
+        android:textColor="@color/black_color"
+        android:textFontWeight="600"
+        android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/View03"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+    <TextView
+        android:id="@+id/Collision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Collision"
+        android:textColor="@color/black_color"
+        android:textFontWeight="800"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/amount_deductible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text=""
+        android:textColor="@color/black_color"
+        android:textFontWeight="600"
+        android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/View04"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+    <TextView
+        android:id="@+id/Comprehensive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Comprehensive"
+        android:textColor="@color/black_color"
+        android:textFontWeight="800"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/amount_deductible_comprehensive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text=""
+        android:textColor="@color/black_color"
+        android:textFontWeight="600"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View06"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <TextView
+        android:id="@+id/liability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Liability"
+        android:textColor="@color/black_color"
+        android:textFontWeight="1000"
+        android:textSize="25sp" />
+    <View
+        android:id="@+id/View07"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="10dp"
+        android:background="#2B497B"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+        <TextView
+            android:id="@+id/bodily_injured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Bodily Injured"
+            android:textColor="@color/black_color"
+            android:textFontWeight="800"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/amount_per_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black_color"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/amount_per_accident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black_color"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/View08"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+        <TextView
+            android:id="@+id/property_damage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Property Damage"
+            android:textColor="@color/black_color"
+            android:textFontWeight="800"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/amount_per_accident_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black_color"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/View09"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <TextView
+        android:id="@+id/non_liability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Non-liability"
+        android:textColor="@color/black_color"
+        android:textFontWeight="1000"
+        android:textSize="25sp" />
+    <View
+        android:id="@+id/View10"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="10dp"
+        android:background="#2B497B"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+        <TextView
+            android:id="@+id/medical_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Medical Payments"
+            android:textColor="@color/black_color"
+            android:textFontWeight="800"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/amount_for_medical_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black_color"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/View11"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+        <TextView
+            android:id="@+id/uninsured_motorist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text="Uninsured and Underinsured Motorist"
+            android:textColor="@color/black_color"
+            android:textFontWeight="800"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/amount_motorist_per_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black_color"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/amount_motorist_per_accident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:text=""
+            android:textColor="@color/black_color"
+            android:textFontWeight="600"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/View12"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#2B497B"
+        />
+    <TextView
+        android:id="@+id/rental"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="6dp"
+        android:text="Rental"
+        android:textColor="@color/black_color"
+        android:textFontWeight="1000"
+        android:textSize="25sp" />
+    <View
+        android:id="@+id/View13"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="10dp"
+        android:background="#2B497B"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+
+                <TextView
+                    android:id="@+id/vehicle_in_rental_coverage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Vehicles included in rental coverage"
+                    android:textColor="@color/black_color"
+                    android:textFontWeight="800"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/vehicles_included_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/black_color"
+                    android:textFontWeight="600"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View14"
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="#2B497B"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightGray">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Name of Provider: "
+                    android:textColor="@color/black_color"
+                    android:textFontWeight="800"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/show_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/black_color"
+                    android:textFontWeight="800"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGray">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Postal code:       "
+                android:textColor="@color/black_color"
+                android:textFontWeight="800"
+                android:textSize="20sp"
+                />
+                <TextView
+                    android:id="@+id/show_postalcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/black_color"
+                    android:textFontWeight="800"
+                    android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGray">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Quote Amount:   "
+                android:textColor="@color/black_color"
+                android:textFontWeight="800"
+                android:textSize="20sp"
+                />
+                <TextView
+                    android:id="@+id/show_final_quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/black_color"
+                    android:textFontWeight="800"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For more information click on button below to go on our website:"
+            android:textColor="@color/color_warning"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Go on Website"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

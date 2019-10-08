@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/backgroundcolor"
+        tools:context="com.myproject.sachinpatel.jobsearch.MainActivity">
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/layout_text">-->
+            <!--<TextView-->
+                <!--android:layout_width="140dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/AppTheme"-->
+                <!--android:text="Car Make :"-->
+                <!--android:fontFamily="monospace"-->
+                <!--android:textSize="16dp"-->
+                <!--/>-->
+
+            <!--<EditText-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:id="@+id/jobposition"-->
+                <!--android:inputType="text"-->
+                <!--android:maxLength="30"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:hint="Job Position"-->
+                <!--android:background="@drawable/rounded_edittext"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_caryear">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Car Year :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <Spinner
+                android:id="@+id/car_year"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="1dp"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_carmake">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Car Make :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <Spinner
+                android:id="@+id/car_make"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="1dp"
+                android:spinnerMode="dialog"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_carModel">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Car Model :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:id="@+id/car_model"
+                android:inputType="text"
+                android:hint="Civic EX Sedan 4 Door"
+                android:maxLength="30"
+                android:paddingLeft="15dp"
+                android:background="@drawable/bg_edittext"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ownorlease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Do you Own or Lease Vehicle? :"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioOwnorLease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioOwn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radio_own"
+                    android:buttonTint="@color/radio_color"/>
+
+                <RadioButton
+                    android:id="@+id/radioLease"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_lease"
+                    android:buttonTint="@color/radio_color"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_annual_milage">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Annual Milage :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:id="@+id/annual_milage"
+                android:inputType="number"
+                android:hint="ex. 15000"
+                android:maxLength="30"
+                android:paddingLeft="15dp"
+                android:background="@drawable/bg_edittext"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_annual_firstName">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="First Name :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:id="@+id/firstName"
+                android:inputType="text"
+                android:hint="First Name"
+                android:maxLength="30"
+                android:paddingLeft="15dp"
+                android:background="@drawable/bg_edittext"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_lastName">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Last Name :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:id="@+id/lastName"
+                android:inputType="text"
+                android:hint="Last Name"
+                android:maxLength="30"
+                android:paddingLeft="15dp"
+                android:background="@drawable/bg_edittext"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_birthDate">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Birth Date :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:id="@+id/birth_date"
+                android:inputType="date"
+                android:hint="mm/dd/yyyy"
+                android:maxLength="30"
+                android:paddingLeft="15dp"
+                android:background="@drawable/bg_edittext"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/maleorfemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AppTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Gender :"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radio_male"
+                    android:buttonTint="@color/radio_color"/>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_female"
+                    android:buttonTint="@color/radio_color"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_marital_status">
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme"
+                android:text="Marital Status :"
+                android:fontFamily="monospace"
+                android:textSize="16dp"
+                />
+            <Spinner
+                android:id="@+id/marital_status"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="1dp"
+                android:spinnerMode="dialog"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_submit">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/get_quote"
+                android:text="Get Quote"
+                android:fontFamily="monospace"
+                android:textSize="18dp"
+                android:paddingLeft="4dp"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <!--    <ProgressBar-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        style="?android:attr/progressBarStyleLarge"-->
+        <!--        android:id="@+id/progressBar"-->
+        <!--        android:layout_centerHorizontal="true"-->
+        <!--        android:progress="25"-->
+        <!--        />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/logo"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:src="@drawable/jobsearch" />-->
+
+        <!--  <FrameLayout-->
+        <!--      android:layout_width="wrap_content"-->
+        <!--      android:layout_height="wrap_content">-->
+
+        <!--    <ImageButton-->
+        <!--        android:minHeight="100"-->
+        <!--        android:minWidth="200"-->
+        <!--        android:layout_width="45dp"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:id="@+id/indeed"-->
+        <!--        android:src="@drawable/indeed_logo"-->
+        <!--        android:clickable="true"-->
+        <!--        />-->
+        <!--  </FrameLayout>-->
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content">-->
+        <!--    <ImageButton-->
+        <!--        android:minHeight="100"-->
+        <!--        android:minWidth="200"-->
+        <!--        android:layout_width="45dp"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:id="@+id/monster"-->
+        <!--        android:src="@drawable/monster_logo"-->
+        <!--        android:clickable="true"-->
+        <!--        />-->
+        <!--    </FrameLayout>-->
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content">-->
+        <!--    <ImageButton-->
+        <!--        android:minHeight="100"-->
+        <!--        android:minWidth="200"-->
+        <!--        android:layout_width="45dp"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:id="@+id/workopolis"-->
+        <!--        android:src="@drawable/workopolis_logo"-->
+        <!--        android:clickable="true"-->
+        <!--        />-->
+        <!--    </FrameLayout>-->
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content">-->
+        <!--    <ImageButton-->
+        <!--        android:minHeight="100"-->
+        <!--        android:minWidth="200"-->
+        <!--        android:layout_width="45dp"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:id="@+id/ziprecruiter"-->
+        <!--        android:src="@drawable/ziprecruiter_logo"-->
+        <!--        android:clickable="true"-->
+        <!--        />-->
+        <!--    </FrameLayout>-->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
